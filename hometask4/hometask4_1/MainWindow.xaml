@@ -1,0 +1,25 @@
+﻿<Window x:Class="hometask4_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hometask4_1"
+        mc:Ignorable="d"
+        Title="Одномерный массив В15" Height="450" Width="800">
+    <Grid x:Name="tbConst">
+        <Label Content="Длина массива:" HorizontalAlignment="Left" Margin="10,10,0,0" Width="100" Height="26" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbArraySize" HorizontalAlignment="Left" Height="23" Margin="130,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="tbArray0" Height="70" Margin="10,71,10,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False"/>
+        <Label Content="Массив:" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="121"/>
+        <Label Content="Константа C:" HorizontalAlignment="Left" Margin="310,10,0,0" VerticalAlignment="Top" Width="98"/>
+        <TextBox x:Name="tbConstant" HorizontalAlignment="Left" Height="23" Margin="424,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <Button x:Name="btStart" Content="Выполнить" HorizontalAlignment="Left" Margin="617,16,0,0" VerticalAlignment="Top" Width="100" Click="BtStart_Click"/>
+        <Label Content="Элементов массива, больших C:" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="tbAns1" HorizontalAlignment="Left" Height="23" Margin="384,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Label Content="Произведение элементов после максимального по модулю:" HorizontalAlignment="Left" Margin="10,216,0,0" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="tbAns2" HorizontalAlignment="Left" Height="23" Margin="384,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Label Content="Преобразованный массив:" HorizontalAlignment="Left" Margin="10,263,0,0" VerticalAlignment="Top" Width="170"/>
+        <TextBox x:Name="tbArray1" Margin="10,294,10,55" TextWrapping="Wrap" IsEnabled="False"/>
+
+    </Grid>
+</Window>
