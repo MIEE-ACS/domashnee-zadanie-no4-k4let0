@@ -31,6 +31,13 @@ namespace hometask4_2
             int m;
             if (int.TryParse(tbSize1.Text, out n) && int.TryParse(tbSize2.Text, out m) && n > 0 && m > 0)
             {
+                tbArray0.Height = 16.5 * n;
+                tbArray1.Height = 16.5 * n;
+                tbCharacteristic0.Height = 16.5 * n;
+                tbCharacteristic1.Height = 16.5 * n;
+                tbArray0.Width = 21 * m;
+                tbArray1.Width = 21 * m;
+
                 // генерация массива
                 Random rand = new Random();
                 int[,] arr = new int[n, m];
@@ -62,6 +69,7 @@ namespace hometask4_2
                 {
                     for (int j = 0; j < m; ++j) if (arr[i, j] < 0 && arr[i, j] % 2 == 0) characteristics[i] += arr[i, j];
                 }
+                tbCharacteristic0.Text = string.Join("\n", characteristics);
                 for(int i = 0; i < n; ++i)
                 {
                     for (int ii = i; ii < n; ++ii)
@@ -88,6 +96,7 @@ namespace hometask4_2
                     for (int j = 0; j < m; ++j) textarr[i] = textarr[i].Insert(textarr[i].Length, $"{arr[i, j],-5}");
                 }
                 tbArray1.Text = string.Join("\n", textarr);
+                tbCharacteristic1.Text = string.Join("\n", characteristics);
             }
             else MessageBox.Show("Размеры матрицы должны быть положительными целыми числами");
         }
