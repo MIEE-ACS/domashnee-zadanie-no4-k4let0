@@ -1,0 +1,39 @@
+﻿<Window x:Class="hometask4_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hometask4_2"
+        mc:Ignorable="d"
+        Title="Двумерный массив В15" Height="602" Width="953">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="41*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Число строк:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="tbSize1" HorizontalAlignment="Left" Height="23" Margin="97,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Число столбцов:" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="tbSize2" HorizontalAlignment="Left" Height="23" Margin="353,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <Label Content="Массив" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btStart" Content="Выполнить" HorizontalAlignment="Left" Margin="109,10,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.52,-1.25" Click="BtStart_Click" Grid.Column="1"/>
+        <Label Content="№ первого столбца с 0 (нумерация с 1): " HorizontalAlignment="Left" Margin="10,284,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="tbAns" HorizontalAlignment="Left" Height="23" Margin="260,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" IsEnabled="False" Grid.ColumnSpan="2"/>
+        <Label Content="Преобразованный массив:" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label Content="Характеристика строки (для удобства отслеживания)" Grid.Column="1" HorizontalAlignment="Left" Margin="223,7,0,0" VerticalAlignment="Top" Width="305" Height="26"/>
+        <Label Content="(сумма отрицательных четных элементов)" Grid.Column="1" HorizontalAlignment="Left" Margin="268,33,0,0" VerticalAlignment="Top" Width="242"/>
+        <ScrollViewer x:Name="scArray0" Height="207" Margin="10,72,318,0" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalScrollBarVisibility="Visible">
+            <TextBox x:Name="tbArray0" Height="207" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="596"/>
+        </ScrollViewer>
+        <ScrollViewer x:Name="scArray1" Height="220" Margin="10,336,318,10" Grid.ColumnSpan="2" HorizontalScrollBarVisibility="Visible">
+            <TextBox x:Name="tbArray1" TextWrapping="Wrap" IsEnabled="False" Height="220" Width="596"/>
+        </ScrollViewer>
+        <ScrollViewer x:Name="scCharacteristic0" Grid.Column="1" Height="196" Margin="0,83,61,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="139">
+            <TextBox x:Name="tbCharacteristic0" Height="200" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120" IsEnabled="False"/>
+        </ScrollViewer>
+        <ScrollViewer x:Name="scCharacteristic1" Grid.Column="1" Margin="0,336,61,10" HorizontalAlignment="Right" Width="139" Height="220"> 
+            <TextBox x:Name="tbCharacteristic1" TextWrapping="Wrap" IsEnabled="False" HorizontalAlignment="Right" Width="120" Height="220"/>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
